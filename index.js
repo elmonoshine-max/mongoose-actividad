@@ -49,7 +49,6 @@ app.set('view engine', 'ejs');
 
 app.use('/api/v1', enrutamiento);
 
-app.get('/', clienteController.home);
 
 
 app.get('/servicios', servicioController.listar);

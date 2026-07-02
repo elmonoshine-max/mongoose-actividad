@@ -55,7 +55,7 @@ exports.registrar = async (req, res) => {
             telefono: req.body.telefono
         });
 
-        res.redirect('/api/v1/clientes');
+        res.redirect('/');
 
     } catch (error) {
         res.status(500).json({
@@ -76,7 +76,7 @@ exports.actualizar = async (req, res) => {
             }
         );
 
-        res.redirect('/api/v1/clientes');
+        res.redirect('/');
 
     } catch (error) {
 
@@ -96,7 +96,7 @@ exports.eliminar = async (req, res) => {
             email: req.params.correo
         });
 
-        res.redirect('/api/v1/clientes');
+        res.redirect('/');
 
     } catch (error) {
 
